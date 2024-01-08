@@ -52,6 +52,7 @@ static void mqtt_client_event(struct mg_connection *nc, int ev, void *ev_data)
         if (connect_status == 0) {
             // Success
             print_log(LOG_NOTICE, "MQTT", "MQTT Connected...");
+            print_log(LOG_NOTICE, "MQTT", "Vincent");
             mg_set_protocol_mqtt(nc);
             if (ctx)
                 mg_send_mqtt_handshake_opt(nc, ctx->client_id, ctx->mqtt_opts);
