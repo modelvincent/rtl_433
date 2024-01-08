@@ -1187,6 +1187,7 @@ int sdr_set_center_freq(sdr_dev_t *dev, uint32_t freq, int verbose)
             print_log(LOG_WARNING, __func__, "Failed to set center freq.");
         else
             print_logf(LOG_NOTICE, "SDR", "Tuned to %s.", nice_freq(sdr_get_center_freq(dev)));
+            print_logf(LOG_NOTICE, "SDR", "Version modified for my specific weather station.");
     }
 
 #ifdef THREADS
