@@ -127,6 +127,7 @@ r_device *flex_create_device(char *spec); // maybe put this in some header file?
 static void print_version(void)
 {
     fprintf(stderr, "%s\n", version_string());
+    fprintf(stderr, "RTL433 modified for my specific weather station\n");
 }
 
 _Noreturn
